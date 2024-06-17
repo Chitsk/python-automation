@@ -5,8 +5,8 @@ import logging
 import os
 
 # Server and authentication details
-server_address = "172.30.32.9"
-username = 'administrator@mprlexp.local'
+server_address = "192.168.40.111"
+username = 'administrator@lab.local'
 password = ''  # Ensure this is properly escaped or handled securely
 
 # Calculate yesterday's date and format it
@@ -15,10 +15,10 @@ formatted_date = yesterday.strftime('%d-%b-%Y')
 
 # Paths
 new_folder_path = rf'\\172.30.50.149\FileShare BK Attachment4SAP-WMS\{formatted_date}'
-existing_folder_path = r'\\172.30.50.149\FileShare BK Attachment4SAP-WMS\WindowsImageBackup'  # Adjust this to your actual path
+existing_folder_path = r'\\192.168.222.149\FileShare BK Attachment4SAP-WMS\WindowsImageBackup'  # Adjust this to your actual path
 
 # Custom log file path
-log_file_path = r'C:\Users\Administrator.MPRLEXP\Desktop\script\SAB-BK-Prod\log\04-Attachement-BK-created.log'
+log_file_path = r'C:\Users\Administrator\Desktop\log\04-Attachement-BK-created.log'
 
 # Set up logging
 logging.basicConfig(
